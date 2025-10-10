@@ -90,9 +90,9 @@ services:
 
     # phpMyAdmin
     # phpmyadmin:
-    #     image: phpmyadmin/phpmyadmin:fpm-alpine
+    #     image: phpmyadmin/phpmyadmin
     #     ports:
-    #         - 8080:80
+    #         - 8081:80
     #     links:
     #         - db
     #     environment:
@@ -104,8 +104,8 @@ services:
 
     # Adminer
     # adminer:
-    #   image: adminer
-    #   ports:
-    #     - 9090:8080
-    #   depends_on:
-    #     - db
+    #     image: adminer
+    #     ports:
+    #         - 9090:8080
+    #     depends_on:
+    #         - db
